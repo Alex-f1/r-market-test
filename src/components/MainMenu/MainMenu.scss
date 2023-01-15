@@ -1,0 +1,15 @@
+.main-menu {
+  &__nav {
+    ul {
+      li {
+        a {
+          border-bottom: 2px solid transparent;
+          transition: border-color .3s;
+          &:hover {
+            border-color: #fb923c;
+          }
+        }
+      }
+    }
+  }
+}
