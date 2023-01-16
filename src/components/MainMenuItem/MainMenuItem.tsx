@@ -16,9 +16,9 @@ function MainMenuItem() {
   return (
     <>
       {
-        menuItem.map(item =>
+        menuItem.map((item, index) =>
           <li className="mr-4 last:m-0" key={item.id}>
-            <a href={item.link}>{item.name}</a>
+            <a className=" text-lg" href={item.link}>{item.name + (index+1)}</a>
           </li>
         )
       }

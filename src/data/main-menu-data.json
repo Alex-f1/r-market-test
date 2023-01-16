@@ -1,22 +1,27 @@
 [
   {
     "id": 1,
-    "name": "USB Флешки",
+    "name": "Product ",
     "link": "#"
   },
   {
     "id": 2,
-    "name": "microSD",
+    "name": "Product ",
     "link": "#"
   },
   {
     "id": 3,
-    "name": "SSD Диски",
+    "name": "Product ",
     "link": "#"
   },
   {
     "id": 4,
-    "name": "HDD Диски",
+    "name": "Product ",
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "name": "Product ",
     "link": "#"
   }
 ]
