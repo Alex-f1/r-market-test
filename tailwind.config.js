@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        '130': '40rem',
+        '110': '32rem',
       }
     },
   },

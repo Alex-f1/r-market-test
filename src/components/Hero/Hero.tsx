@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Navigation, Pagination } from "swiper";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 import HeroData from "../../data/hero-data.json";
 
 import "./Hero.scss"
@@ -31,13 +31,17 @@ function Hero() {
           pagination={{
             clickable: true,
           }}
-          modules={[EffectFade, Navigation, Pagination]}
-          className="hero__slider h-130"
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, EffectFade, Navigation, Pagination]}
+          className="hero__slider h-110"
         >
         {
           imgSrc.map((item) => 
             <SwiperSlide key={item.id}>
-              <img src={item.img} />
+              <img src={item.img} alt="" />
             </SwiperSlide>
           )
         }
