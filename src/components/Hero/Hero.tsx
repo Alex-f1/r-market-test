@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 import HeroData from "../../data/hero-data.json";
@@ -9,16 +8,14 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-interface IHero {
+type IHero = {
   id: number,
   img: string,
 }
 
-const heroItems: IHero[] = HeroData;
-
 function Hero() {
 
-  const [imgSrc, setImgSrc] = useState(heroItems);
+  const imgSrc: IHero[] = HeroData;
 
   return (
     <div className="hero">

@@ -7,11 +7,9 @@ interface IMainMenuItem {
   link: string
 }
 
-const mainMenuItems: IMainMenuItem[] = mainMenuData;
-
 function MainMenuItem() {
 
-  const [menuItem, setMenuItem] = useState(mainMenuItems);
+  const menuItem: IMainMenuItem[] = mainMenuData;
 
   return (
     <>
