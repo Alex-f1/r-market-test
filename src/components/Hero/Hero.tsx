@@ -38,7 +38,7 @@ function Hero() {
         {
           imgSrc.map((item) => 
             <SwiperSlide key={item.id}>
-              <img src={item.img} alt="" />
+              <img className="h-full w-full object-cover object-center" src={item.img} alt="" />
             </SwiperSlide>
           )
         }

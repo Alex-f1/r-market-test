@@ -1,0 +1,23 @@
+.product-thumb {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 6%);
+  transition: box-shadow .3s;
+
+  &:hover {
+    box-shadow: 0 14px 30px -15px rgb(0 0 0 / 75%);
+  }
+
+  &__img {
+    max-width: 14rem;
+    height: 14rem;
+  }
+  
+  &__text {
+    height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+}

@@ -2,6 +2,8 @@
 // import logo from '../../logo.svg';
 import Hero from '../Hero/Hero';
 import MenuPanel from '../MenuPanel/MenuPanel';
+import ProductsList from '../ProductsList/ProductsList';
+import Title from '../Title/Title';
 import TopPanel from '../TopPanel/TopPanel';
 
 function App() {
@@ -14,6 +16,9 @@ function App() {
       
       <main className="App-main">
         <Hero />
+        <div className="App-main__container container py-10 px-4 mx-auto">
+          <ProductsList />
+        </div>
       </main>
       
       <footer className="App-footer"></footer>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import mainMenuData from "../../data/main-menu-data.json";
 
 interface IMainMenuItem {
