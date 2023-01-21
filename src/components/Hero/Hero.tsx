@@ -8,14 +8,14 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-type IHero = {
+type THero = {
   id: number,
   img: string,
 }
 
 function Hero() {
 
-  const imgSrc: IHero[] = HeroData;
+  const imgSrc: THero[] = HeroData;
 
   return (
     <div className="hero">
@@ -33,7 +33,7 @@ function Hero() {
             disableOnInteraction: false,
           }}
           modules={[Autoplay, EffectFade, Navigation, Pagination]}
-          className="hero__slider h-110"
+          className="hero__slider h-80 sm:h-96 md:h-110"
         >
         {
           imgSrc.map((item) => 
