@@ -24,8 +24,8 @@ function ProductsList() {
   }, []);
 
   return (
-    <div className="products-list py-5">
-      <div className="products-list__container">
+    <div className="products-list py-10">
+      <div className="products-list__container container px-4 mx-auto">
 
         <Title text={'Рекомендуемые товары'} />
         

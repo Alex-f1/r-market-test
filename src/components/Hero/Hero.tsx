@@ -18,7 +18,7 @@ function Hero() {
   const imgSrc: THero[] = HeroData;
 
   return (
-    <div className="hero">
+    <div className="hero pb-10">
       <div className="hero__container">
         <Swiper
           spaceBetween={30}
@@ -33,7 +33,7 @@ function Hero() {
             disableOnInteraction: false,
           }}
           modules={[Autoplay, EffectFade, Navigation, Pagination]}
-          className="hero__slider h-80 sm:h-96 md:h-110"
+          className="hero__slider h-80 sm:h-96 md:h-110 2xl:h-120"
         >
         {
           imgSrc.map((item) => 

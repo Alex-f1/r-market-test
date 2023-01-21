@@ -1,0 +1,52 @@
+.advantages {
+
+  &__item {
+    position: relative;
+    &:hover {
+      .advantages__hover-element {
+        
+        &.advantages__hover-element--top {
+          width: 100%;
+        }
+        &.advantages__hover-element--right {
+          height: 100%;
+        }
+        &.advantages__hover-element--bottom {
+          width: 100%;
+        }
+        &.advantages__hover-element--left {
+          height: 100%;
+        }
+      }
+    }
+  }
+  &__hover-element {
+    position: absolute;
+    transition: width .5s, height .5s;
+
+    &--top {
+      top: 0;
+      left: 0;
+      width: 0;
+      border-top: 2px solid #fb923c;
+    }
+    &--right {
+      top: 0;
+      right: 0;
+      height: 0;
+      border-right: 2px solid #fb923c;
+    }
+    &--bottom {
+      bottom: 0;
+      right: 0;
+      width: 0;
+      border-bottom: 2px solid #fb923c;
+    }
+    &--left {
+      bottom: 0;
+      left: 0;
+      height: 0;
+      border-left: 2px solid #fb923c;
+    }
+  }
+}
