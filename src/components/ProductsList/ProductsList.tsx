@@ -5,7 +5,7 @@ import IProductThumb from "../../models/products";
 
 function ProductsList() {
 
-  const urlProducts: string = "https://dummyjson.com/products/?limit=9";
+  const urlProducts: string = "https://dummyjson.com/products/?limit=6";
   
   const [productsData, setProductsData] = useState<IProductThumb[]>([]);
 
