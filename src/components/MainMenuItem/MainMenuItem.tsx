@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import mainMenuData from "../../data/main-menu-data.json";
 
 interface IMainMenuItem {
@@ -13,9 +14,11 @@ function MainMenuItem() {
   return (
     <>
       {
-        menuItem.map((item, index) =>
+        menuItem.map((item) =>
           <li className="mr-4 last:m-0" key={item.id}>
-            <a className=" text-lg" href={item.link}>{item.name + (index+1)}</a>
+            <NavLink to={item.link} className="text-sm font-normal uppercase">
+              {item.name}
+            </NavLink>
           </li>
         )
       }

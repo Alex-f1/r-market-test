@@ -1,3 +1,5 @@
+import { Link, Route, Routes } from "react-router-dom";
+
 type propsLogoType = {
   imgSrc: string,
   textLogo: string, 
@@ -15,9 +17,12 @@ function Logo(props: propsLogoType) {
   } else {
     return (
       <div className="logo">
-        <a href="/">
+        <Link to="/">
           <span className="text-2xl font-semibold">{props.textLogo}</span>
-        </a>
+        </Link>
+        <Routes>
+          <Route path="/" />
+        </Routes>
       </div>
     );
   }

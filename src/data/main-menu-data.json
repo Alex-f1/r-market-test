@@ -1,27 +1,27 @@
 [
   {
     "id": 1,
-    "name": "Product ",
-    "link": "#"
+    "name": "Ноутбуки",
+    "link": "/catalog-page"
   },
   {
     "id": 2,
-    "name": "Product ",
-    "link": "#"
+    "name": "Телефоны",
+    "link": "/catalog-page"
   },
   {
     "id": 3,
-    "name": "Product ",
-    "link": "#"
+    "name": "Планшеты",
+    "link": "/catalog-page"
   },
   {
     "id": 4,
-    "name": "Product ",
-    "link": "#"
+    "name": "Компьютеры",
+    "link": "/catalog-page"
   },
   {
     "id": 5,
-    "name": "Product ",
-    "link": "#"
+    "name": "Комплектующие",
+    "link": "/catalog-page"
   }
 ]

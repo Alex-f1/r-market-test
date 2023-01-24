@@ -11,7 +11,7 @@ function Footer() {
   const social = siteInfoData[0].social.item;
 
   return (
-    <footer className="App-footer bg-zinc-800 py-10 mt-10 text-white">
+    <footer className="App-footer bg-zinc-800 py-10 mt-auto text-white">
       <div className="App-footer__container container px-4 mx-auto">
         <div className="App-footer__cols grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="App-footer__col">
