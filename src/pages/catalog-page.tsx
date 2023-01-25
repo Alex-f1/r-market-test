@@ -1,14 +1,13 @@
+import LayoutInner from "../components/LayoutInner/LayoutInner";
 import ProductsList from "../components/ProductsList/ProductsList";
 import Title from "../components/Title/Title";
 
 function CatalogPage() {
   return (
-    <div className="container px-4 mx-auto">
+    <LayoutInner>
       <Title text="Каталог продуктов" />
-
       <ProductsList />
-      
-    </div>
+    </LayoutInner>
   )
 }
 

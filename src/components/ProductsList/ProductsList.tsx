@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ProductThumb from "../ProductThumb/ProductThumb";
-import Title from "../Title/Title";
 import IProductThumb from "../../models/products";
 
 function ProductsList() {
@@ -26,9 +25,6 @@ function ProductsList() {
   return (
     <div className="products-list py-10">
       <div className="products-list__container container px-4 mx-auto">
-
-        <Title text={'Рекомендуемые товары'} />
-        
         <div className="products-list__items grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <>
             {
