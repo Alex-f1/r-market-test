@@ -53,8 +53,8 @@ function CardProduct() {
               <button className="w-30 group relative flex justify-center rounded-sm border border-transparent bg-orange-400 py-2 px-4 text-sm font-medium text-white transition-colors duration-300 hover:bg-orange-600 focus:outline-none" type="submit">
                 Заказать сейчас
               </button>
-              <button className="w-30 group relative flex justify-center rounded-sm border border-transparent bg-orange-400 py-2 px-4 text-sm font-medium text-white transition-colors duration-300 hover:bg-orange-600 focus:outline-none" type="button">
-                В корзину
+              <button className="w-30 group relative flex justify-center rounded-sm border border-orange-400 py-2 px-4 text-sm font-medium text-orange-400 transition-colors duration-300 hover:bg-orange-600 hover:text-white focus:outline-none" type="button">
+                Добавить в корзину
               </button>
             </div>
           </div>

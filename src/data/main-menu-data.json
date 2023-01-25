@@ -2,26 +2,26 @@
   {
     "id": 1,
     "name": "Ноутбуки",
-    "link": "/catalog-page"
+    "link": "/catalog"
   },
   {
     "id": 2,
     "name": "Телефоны",
-    "link": "/catalog-page"
+    "link": "/catalog"
   },
   {
     "id": 3,
     "name": "Планшеты",
-    "link": "/catalog-page"
+    "link": "/catalog"
   },
   {
     "id": 4,
     "name": "Компьютеры",
-    "link": "/catalog-page"
+    "link": "/catalog"
   },
   {
     "id": 5,
     "name": "Комплектующие",
-    "link": "/catalog-page"
+    "link": "/catalog"
   }
 ]

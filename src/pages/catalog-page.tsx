@@ -5,7 +5,7 @@ import Title from "../components/Title/Title";
 function CatalogPage() {
   return (
     <LayoutInner>
-      <Title text="Каталог продуктов" />
+      <Title text="Каталог товаров" />
       <ProductsList />
     </LayoutInner>
   )

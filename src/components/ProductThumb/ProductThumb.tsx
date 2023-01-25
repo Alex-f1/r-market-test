@@ -9,12 +9,12 @@ interface propsProductThumb {
 
 function ProductThumb({ productData }: propsProductThumb) {
   return (
-    <div className="product-thumb p-5">
-      <div className="product-thumb__body">
-        <Link to={`/product-page/${productData.id}`} className="product-thumb__img block mb-6 mx-auto overflow-hidden">
+    <div className="product-thumb h-full p-5">
+      <div className="product-thumb__body flex flex-col h-full">
+        <Link to={`/product/${productData.id}`} className="product-thumb__img block mb-6 mx-auto overflow-hidden">
           <img className="h-full w-full object-cover object-center hover:scale-110 transition-transform duration-1000 inline-block align-top" src={productData.thumbnail} alt="" />
         </Link>
-        <Link to={`/product-page/${productData.id}`} className="product-thumb__name block mb-4 transition-colors duration-300 text-xl text-orange-400 hover:text-black">
+        <Link to={`/product/${productData.id}`} className="product-thumb__name flex-auto block mb-4 transition-colors duration-300 text-xl text-orange-400 hover:text-black">
           {productData.title}
         </Link>
         <div className="product-thumb__text text-base mb-5 font-light text-gray-500">

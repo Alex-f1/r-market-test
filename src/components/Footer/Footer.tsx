@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ISiteInfoData } from "../../models/siteInfo";
 import siteInfoData from "../../data/site-info-data.json";
 
@@ -25,10 +26,10 @@ function Footer() {
                     menu.map((item) => {
                       return (
                         <li key={item.id}>
-                          <a className="text-zinc-300 transition-colors hover:text-white" 
-                            href={item.link}>
+                          <Link className="text-zinc-300 transition-colors hover:text-white" 
+                            to={item.link}>
                             {item.name}
-                          </a>
+                          </Link>
                         </li>
                       );
                     })

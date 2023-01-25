@@ -6,22 +6,22 @@
         {
           "id": 1,
           "name": "Главная",
-          "link": "#"
+          "link": "/"
         },
         {
           "id": 2,
           "name": "О магазине",
-          "link": "#"
+          "link": "about"
         },
         {
           "id": 3,
           "name": "Оплата и доставка",
-          "link": "#"
+          "link": "info"
         },
         {
           "id": 4,
           "name": "Контакты",
-          "link": "#"
+          "link": "contacts"
         }
       ]
     },
