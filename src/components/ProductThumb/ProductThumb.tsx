@@ -1,13 +1,35 @@
 import { Link } from "react-router-dom";
 import IProductThumb from "../../models/products";
+import { IModalPopupData } from "../ProductsList/ProductsList";
 
 import "./ProductThumb.scss";
 
 interface propsProductThumb {
-  productData: IProductThumb
+  productData: IProductThumb;
+  modalPopup: Function;
+  getModalPopupData: Function;
 }
 
-function ProductThumb({ productData }: propsProductThumb) {
+// interface IModalPopupData {
+//   id: number;
+//   img: string;
+//   name: string;
+//   price: number;
+// }
+
+function ProductThumb({ productData, modalPopup, getModalPopupData }: propsProductThumb) {
+
+  let setModalPopupData = (obj: IModalPopupData): Object => {
+    return obj = {
+      id: productData.id,
+      img: productData.thumbnail,
+      name: productData.title,
+      price: productData.price,
+    }
+  }
+
+  // console.log(getModalPopupData(setModalPopupData))
+
   return (
     <div className="product-thumb h-full p-5">
       <div className="product-thumb__body flex flex-col h-full">
@@ -24,11 +46,12 @@ function ProductThumb({ productData }: propsProductThumb) {
           <div className="product-thumb__price text-xl text-orange-400">
             <span>$</span>{productData.price}
           </div>
-          <button className="product-thumb__button-order w-30 group relative flex justify-center rounded-sm border border-transparent bg-orange-400 py-2 px-4 text-sm font-medium text-white transition-colors duration-300 hover:bg-orange-600 focus:outline-none" type="button">
+          <button className="product-thumb__button-order w-30 group relative flex justify-center rounded-sm border border-transparent bg-orange-400 py-2 px-4 text-sm font-medium text-white transition-colors duration-300 hover:bg-orange-600 focus:outline-none" type="button" onClick={() => { modalPopup(true); getModalPopupData(setModalPopupData) }}>
             <span>Заказать</span>
           </button>
         </div>
       </div>
+      
     </div>
   );
 }

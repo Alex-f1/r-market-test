@@ -1,9 +1,10 @@
 import LayoutInner from "../components/LayoutInner/LayoutInner";
+import Title from "../components/Title/Title";
 
 function ContactsPage() {
   return ( 
     <LayoutInner>
-      <div>ContactsPage</div>
+      <Title text="Контакты"/>
     </LayoutInner>
   );
 }
