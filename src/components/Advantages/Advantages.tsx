@@ -3,7 +3,7 @@ import "./Advantages.scss";
 
 function Advantages() {
   return (
-    <div className="advantages py-10">
+    <div className="advantages pt-10 pb-20">
       <div className="advantages__container container px-4 mx-auto">
         <Title text="Преимущества" />
 

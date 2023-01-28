@@ -1,10 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import IProductThumb from '../../models/products';
+import { IModalPopupData } from '../ProductsList/ProductsList';
 
 import "./CardProduct.scss";
 
-function CardProduct() {
+interface propsProductThumb {
+  modalPopup: (modalPopupOpen: boolean) => void;
+  getModalPopupData: Function;
+}
+
+function CardProduct({ modalPopup, getModalPopupData }: propsProductThumb ) {
 
   const { IDProduct } = useParams();
   const navigate = useNavigate();
@@ -25,6 +31,15 @@ function CardProduct() {
   }, [IDProduct]);
 
   const goBack = () => navigate(-1)
+
+  let setModalPopupData = (modalPopupData: IModalPopupData): IModalPopupData => {
+    return modalPopupData = {
+      id: productData.id,
+      img: productData.thumbnail,
+      name: productData.title,
+      price: productData.price,
+    }
+  }
 
   return (
     <div className="card-product mx-auto">
@@ -58,7 +73,8 @@ function CardProduct() {
             </div>
             <div className="flex space-x-4 mb-5 text-sm font-medium">
               <div className="flex-auto flex space-x-4 pr-4">
-                <button className="w-30 group relative flex justify-center rounded-sm border border-transparent bg-orange-400 py-2 px-4 text-sm font-medium text-white transition-colors duration-300 hover:bg-orange-600 focus:outline-none" type="submit">
+                <button className="w-30 group relative flex justify-center rounded-sm border border-transparent bg-orange-400 py-2 px-4 text-sm font-medium text-white transition-colors duration-300 hover:bg-orange-600 focus:outline-none" type="button" 
+                  onClick={() => { modalPopup(true); getModalPopupData(setModalPopupData); }}>
                   Заказать сейчас
                 </button>
                 <button className="w-30 group relative flex justify-center rounded-sm border border-orange-400 py-2 px-4 text-sm font-medium text-orange-400 transition-colors duration-300 hover:bg-orange-600 hover:text-white focus:outline-none" type="button">
