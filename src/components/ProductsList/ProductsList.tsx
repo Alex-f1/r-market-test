@@ -5,15 +5,10 @@ import ModalPopup from "../ModalPopup/ModalPopup";
 import Title from "../Title/Title";
 import OrderProduct from "../OrderProduct/OrderProduct";
 
-/* type TModalPopup = {
-  isActiveM: string
-  setIsActive: boolean
-} */
-
 export interface IModalPopupData {
   id: number;
-  img: string;
-  name: string;
+  thumbnail: string;
+  title: string;
   price: number;
 }
 
@@ -23,7 +18,7 @@ function ProductsList() {
   
   const [productsData, setProductsData] = useState<IProductThumb[]>([]);
 
-  const [modalPopupActive, setModalPopupActive] = useState<any>(false);
+  const [modalPopupActive, setModalPopupActive] = useState<boolean>(false);
 
   const [modalPopupData, setModalPopupData] = useState<IModalPopupData>(Object);
 

@@ -10,10 +10,10 @@ function OrderProduct({ dataModal }: propsOrderProduct) {
       <form>
         <div className="flex">
           <div className="w-1/2 pr-3">
-            <h2 className="text-2xl text-orange-400 mb-2">{dataModal.name}</h2>
+            <h2 className="text-2xl text-orange-400 mb-2">{dataModal.title}</h2>
             <div className="w-full mb-2 h-48">
               <img className=" w-full h-full object-cover object-center"
-                src={dataModal.img} alt={dataModal.name} />
+                src={dataModal.thumbnail} alt={dataModal.title} />
             </div>
             <p className="text-sm text-slate-500 flex items-center mb-1">
               <i className="mr-1">

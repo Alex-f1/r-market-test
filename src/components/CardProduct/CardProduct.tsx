@@ -35,8 +35,8 @@ function CardProduct({ modalPopup, getModalPopupData }: propsProductThumb ) {
   let setModalPopupData = (modalPopupData: IModalPopupData): IModalPopupData => {
     return modalPopupData = {
       id: productData.id,
-      img: productData.thumbnail,
-      name: productData.title,
+      thumbnail: productData.thumbnail,
+      title: productData.title,
       price: productData.price,
     }
   }

@@ -1,9 +1,10 @@
 import "./ModalPopup.scss";
 
 interface IModalPopup {
-  isActive: string;
-  setIsActive: Function;
-  children: React.ReactNode;
+  isActive: boolean;
+  setIsActive: (modalPopupOpen: boolean) => void;
+  children: React.ReactNode | React.ReactNode[];
+  style?: React.CSSProperties;
 }
 
 function ModalPopup({ isActive, setIsActive, children }: IModalPopup) {
