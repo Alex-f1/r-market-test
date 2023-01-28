@@ -18,7 +18,7 @@ function Logo(props: propsLogoType) {
     return (
       <div className="logo">
         <Link to="/">
-          <span className="text-2xl font-semibold">{props.textLogo}</span>
+          <span className="text-2xl font-semibold tracking-wider">{props.textLogo}</span>
         </Link>
         <Routes>
           <Route path="/" />

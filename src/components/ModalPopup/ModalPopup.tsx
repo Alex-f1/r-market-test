@@ -10,7 +10,7 @@ function ModalPopup({ isActive, setIsActive, children }: IModalPopup) {
   return (
     <div className={isActive ? "modal-popup _is-active" : "modal-popup"} 
       onClick={() => setIsActive(false)} >
-      <div className="modal-popup__container w-6/12 min-h-[400px] p-5 mx-auto rounded-sm relative" 
+      <div className="modal-popup__container w-4/12 min-h-[400px] p-5 mx-auto rounded-sm relative" 
         >
         <button className="absolute top-3 right-3">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-orange-400">

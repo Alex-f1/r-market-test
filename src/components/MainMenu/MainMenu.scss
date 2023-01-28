@@ -8,6 +8,10 @@
           &:hover {
             border-color: #fb923c;
           }
+          &.active {
+            border-color: #fb923c;
+            pointer-events: none;
+          }
         }
       }
     }

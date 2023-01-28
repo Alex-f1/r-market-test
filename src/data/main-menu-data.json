@@ -1,27 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Ноутбуки",
-    "link": "/catalog"
-  },
-  {
-    "id": 2,
-    "name": "Телефоны",
-    "link": "/catalog"
-  },
-  {
-    "id": 3,
-    "name": "Планшеты",
-    "link": "/catalog"
-  },
-  {
-    "id": 4,
-    "name": "Компьютеры",
-    "link": "/catalog"
-  },
-  {
-    "id": 5,
-    "name": "Комплектующие",
+    "name": "Каталог",
     "link": "/catalog"
   }
 ]
