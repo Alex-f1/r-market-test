@@ -4,4 +4,5 @@ export default interface IProductThumb {
   title: string;
   description: string;
   price: number;
+  isC: boolean;
 }

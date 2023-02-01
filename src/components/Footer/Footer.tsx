@@ -58,7 +58,7 @@ function Footer() {
                     return (
                       <a className="text-zinc-300 transition-colors hover:text-white" 
                         key={item.id}
-                        href={`tet:${item.phone}`}>
+                        href={`tel:${item.phone}`}>
                         {item.phone}
                       </a>
                     );

@@ -16,7 +16,7 @@ function MainMenuItem() {
       {
         menuItem.map((item) =>
           <li className="mr-4 last:m-0" key={item.id}>
-            <NavLink to={item.link} className="text-sm font-normal uppercase">
+            <NavLink to={item.link} className="text-md font-normal uppercase tracking-wider">
               {item.name}
             </NavLink>
           </li>
